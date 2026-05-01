@@ -1,0 +1,36 @@
+BoxLayout:
+    orientation: "vertical"
+    padding: 20
+    spacing: 10
+
+    canvas.before:
+        Color:
+            rgba: 0,0,0,1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    Label:
+        text: "🔥 DKWIN AI SYSTEM"
+        font_size: "20sp"
+        color: 0,1,0,1
+
+    Label:
+        id: pred
+        text: "PRED: --"
+        font_size: "18sp"
+        color: 0,1,0,1
+
+    Label:
+        id: conf
+        text: "CONF: --"
+        color: 1,1,0,1
+
+    Label:
+        id: nums
+        text: "NUMBERS: --"
+        color: 0,1,1,1
+
+    Button:
+        text: "ADD RANDOM (TEST)"
+        on_press: app.add_fake()
